@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="test">
+    <p>ABC</p>
+    <div>
+        <p>
+          <span>HIHI</span>
+        </p>
+    </div>
+</div>
+<div>
+  Test
+</div>
+<div>
+  Test
+</div>
+<style>
+  div p span{
+    background: red;
+  }
+
+  .test > p {
+    background: yellow;
+  }
+
+  .test + div {
+    background: blue;
+  }
+
+  /*general sibling selector*/
+  .test ~ div{
+    background: blue;
+  }
+</style>
+</body>
+</html>
