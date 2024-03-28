@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <p>Header</p>
+    </header>
+    <nav>Navigation</nav>
+    <div class="content">
+        <div class="col-1">Col 1</div>
+        <div class="col-2">Main Content</div>
+        <div class="col-3">Col 2</div>
+    </div>
+    <footer>Footer</footer>
+</div>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: 0px auto;
+        width: 899px;
+    }
+
+    .container > header {
+        background: blue;
+        height: 50px;
+        text-align: center;
+        color: white;
+    }
+
+    .container > nav {
+        margin-top: 10px;
+        height: 40px;
+        background: green;
+        text-align: center;
+        color: white;
+    }
+
+    .container > .content * {
+        height: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .container > .content {
+        margin-top: 10px;
+        height: 500px;
+    }
+
+    .container > .content > .col-1 {
+        float: left;
+        width: 18%;
+        background: blue;
+    }
+
+    .container > .content > .col-2 {
+        width: 60%;
+        float: left;
+        background: green;
+        margin-left: 2%;
+    }
+
+    .container > .content > .col-3 {
+        width: 18%;
+        float: right;
+        background: red;
+    }
+
+    .container > footer {
+        margin-top: 10px;
+        height: 40px;
+        background: green;
+        text-align: center;
+        color: white;
+    }
+
+</style>
+</body>
+</html>
