@@ -11,8 +11,19 @@
 
 </body>
 <script>
-    let age = 30;
-    const address = "Viet Nam";
-    age = 33;
+    const languages = ["PHP", "JS", "Java"];
+    const techStack = new Array("Kubernest", "Docker", "AWS");
+    console.log(languages[0]);
+    console.log(languages[1]);
+
+    for (let i = 0; i < languages.length; i++) {
+        console.log(languages[i]);
+    }
+
+    languages.forEach(function (value, index, array) {
+        console.log(value);
+    });
+
+    languages[0] = 12;
 </script>
 </html>
