@@ -15,8 +15,7 @@
 
 </div>
 
-<button id="btn" onclick="copyMethod1()">Copy</button>
-
+<button id="btn" onclick="copyMethod2('wrapper','#copy-wrapper')">Copy</button>
 <script>
     function copyMethod1() {
         const pNodes = document.querySelectorAll('#wrapper p');
@@ -25,6 +24,12 @@
             const clonePNodes = pNodes[i].cloneNode(true);
             copyWrapper.appendChild(clonePNodes);
         }
+    }
+
+    function copyMethod2(wrapper,copyWrapper) {
+        const wrapperNode = document.querySelector('#'+wrapper);
+        const copyWrapperNode = document.querySelector(copyWrapper);
+        copyWrapperNode.innerHTML = wrapperNode.innerHTML;
     }
 </script>
 </body>
