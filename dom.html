@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--attribute-->
+<div id="content" style="color:red">Content</div>
+
+<div class="group-content">Content</div>
+<div class="group-content">Content</div>
+<div class="group-content">Content</div>
+
+<div>
+    <div class="abc"></div>
+</div>
+
+
+<div class="wrapper">
+    <div class="note"></div>
+</div>
+<button onclick="changeText()">Change Text</button>
+<script>
+    function changeText() {
+        /*const divNode = document.getElementById('content');
+        //property
+        divNode.innerText = "New Content";
+        divNode.style.color = 'red';*/
+        // const divNodes = document.getElementsByTagName('div');
+        //const divNodes = document.getElementsByClassName('group-content');
+        const divNode = document.querySelector('#content');
+        const divNodes = document.querySelectorAll('.group-content');
+        const divNodeABC = document.querySelector('div .abc');
+        const nodeWrapper = document.querySelector('.wrapper');
+        const nodeNote = nodeWrapper.querySelector('.note');
+        for (let i = 0; i < divNodes.length; i++) {
+            divNodes[i].innerText = 'New Content';
+        }
+    }
+
+    //csr - single page application
+    //vuejs -> nuxt, angular - angular ssr, react -> next
+    //java web -> ssr
+</script>
+</body>
+</html>
