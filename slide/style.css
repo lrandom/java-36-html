@@ -44,3 +44,7 @@ ul,li {
 .btn-prev{
     left: 0px;
 }
+
+.hidden{
+    display: none;
+}
