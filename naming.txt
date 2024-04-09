@@ -1,0 +1,9 @@
+các phong cách đăt tên trong lập trình
+
+full name
+
+1 - PascalCase -> FullName -> đặt tên cho lớp khi học OOP
+2 - camelCase -> fullName -> đặt tên cho biến, cho tên phương thức/hàm
+3 - under_score -> snake_case -> full_name -> biến, phương thức/hàm, đặt tên cho các giá trị của attribute trong HTML
+
+//convention code ->
