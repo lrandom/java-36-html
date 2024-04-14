@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <header>Header</header>
+    <nav>Nav</nav>
+    <div class="content">
+        <div class="col-1">Content</div>
+        <div class="col-2">Main Content</div>
+        <div class="col-3">Content</div>
+    </div>
+    <footer>Footer</footer>
+</div>
+
+<style>
+    .container {
+        width: 899px;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+
+    header {
+        background: blue;
+        height: 100px;
+    }
+
+    nav {
+        background: yellow;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .content {
+        margin-top: 10px;
+        height: 500px;
+    }
+
+    .content > .col-1 {
+        width: 20%;
+        background: blue;
+        float: left;
+        height: 100%;
+    }
+
+    .content > .col-2 {
+        width: 50%;
+        background: green;
+        float: left;
+        height: 100%;
+        margin-left: 5%;
+    }
+
+    .content > .col-3 {
+        width: 20%;
+        background: blue;
+        float: right;
+        height: 100%;
+    }
+
+    footer{
+        background: blue;
+        margin-top:10px;
+    }
+</style>
+</body>
+</html>
