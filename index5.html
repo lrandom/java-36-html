@@ -79,9 +79,23 @@
     };
 
     const imgs = document.querySelectorAll("img");
+    console.log(imgs);
     for (let i = 0; i < imgs.length; i++) {
         console.log(imgs[i].getAttribute('src'));
     }
+
+    setTimeout(function () {
+        $('.rect').css('background-color', 'blue');
+    }, 2000);
+
+    setInterval(function () {
+        const color = $('.rect').css('background-color');
+        if (color === 'rgb(0, 0, 255)') {
+            $('.rect').css('background-color', 'red');
+        } else {
+            $('.rect').css('background-color', 'blue');
+        }
+    }, 3000);
 </script>
 </body>
 </html>
